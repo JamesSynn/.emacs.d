@@ -8,8 +8,9 @@
 (depends-on "ace-jump-mode")
 (depends-on "anzu")
 (depends-on "auto-complete")
-
+(depends-on "auto-complete-clang")
 (depends-on "bind-key")
+
 (depends-on "cask")
 (depends-on "cider")
 (depends-on "cl-lib")
@@ -19,6 +20,8 @@
 (depends-on "color-theme")
 (depends-on "color-theme-sanityinc-solarized")
 (depends-on "color-theme-sanityinc-tomorrow")
+(depends-on "company-clang" :git "https://github.com/company-mode/company-mode.git")
+
 (depends-on "dash")
 (depends-on "drag-stuff")
 
@@ -72,6 +75,7 @@
 (depends-on "rinari")
 (depends-on "ruby-mode")
 (depends-on "rspec-mode")
+(depends-on "rtags")
 (depends-on "s")
 (depends-on "smartparens")
 (depends-on "smex")
@@ -82,6 +86,11 @@
 (depends-on "yasnippet")
 
 (depends-on "ivy")
+(depends-on "irony")
 (depends-on "counsel")
 (depends-on "swiper")
 (depends-on "zenburn-theme")
+
+    
+
+
