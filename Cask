@@ -5,22 +5,44 @@
 (source org)
 
 
+;; cask packages
+(depends-on "cask")
+(depends-on "cask-mode")
+(depends-on "init-loader")
+(depends-on "pallet")
+
+;; theme
+(depends-on "color-theme")
+(depends-on "zenburn-theme")
+(depends-on "powerline")
+
+
+;; git
+(depends-on "git")
+(depends-on "git-commit")
+(depends-on "git-timemachine")
+(depends-on "git-wip-timemachine")
+(depends-on "gitignore-mode")
+(depends-on "magit")
+(depends-on "magit-popup")
+
+;; shell
+(depends-on "zlc")
+
+
 (depends-on "ace-jump-mode")
 (depends-on "anzu")
 (depends-on "auto-complete")
 (depends-on "auto-complete-clang")
 (depends-on "bind-key")
 
-(depends-on "cask")
+
 (depends-on "cider")
 (depends-on "cl-lib")
 (depends-on "clojure-cheatsheet")
 (depends-on "clojure-mode")
 (depends-on "coffee-mode")
-(depends-on "color-theme")
-(depends-on "color-theme-sanityinc-solarized")
-(depends-on "color-theme-sanityinc-tomorrow")
-(depends-on "company-clang" :git "https://github.com/company-mode/company-mode.git")
+
 
 (depends-on "dash")
 (depends-on "drag-stuff")
@@ -39,11 +61,6 @@
 (depends-on "fold-dwim")
 (depends-on "fold-dwim-org")
 
-(depends-on "git")
-(depends-on "git-commit")
-(depends-on "git-timemachine")
-(depends-on "git-wip-timemachine")
-(depends-on "gitignore-mode")
 
 (depends-on "htmlize")
 
@@ -53,20 +70,15 @@
 (depends-on "ido-yes-or-no")
 (depends-on "idomenu")
 (depends-on "imenu-anywhere")
-
 (depends-on "idle-highlight-mode")
-(depends-on "magit")
-(depends-on "magit-popup")
+
 (depends-on "markdown-mode")
 (depends-on "markdown-preview-mode")
 
 (depends-on "multiple-cursors")
-(depends-on "pallet")
 (depends-on "popwin")
 (depends-on "prodigy")
 (depends-on "projectile")
-(depends-on "powerline")
-
 
 (depends-on "purescript-mode")
 (depends-on "rainbow-delimiters")
@@ -89,7 +101,6 @@
 (depends-on "irony")
 (depends-on "counsel")
 (depends-on "swiper")
-(depends-on "zenburn-theme")
 
     
 

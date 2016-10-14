@@ -6,49 +6,30 @@
 ;; You may delete these explanatory comments.
 (package-initialize)
 
-(mapc
- (lambda (mode)
-   (when (fboundp mode)
-     (funcall mode -1)))
-'(menu-bar-mode tool-bar-mode scroll-bar-mode))
+;; Turn off mouse interface early in startup to avoid momentary display
+(if (fboundp 'menu-bar-mode) (menu-bar-mode -1))
+(if (fboundp 'tool-bar-mode) (tool-bar-mode -1))
+(if (fboundp 'scroll-bar-mode) (scroll-bar-mode -1))
 
+;; No splash screen please ... jeez
+(setq inhibit-startup-message t)
+
+(global-auto-revert-mode t)
 ;; cask initialzing and setting up emacs packages from the Cask file
+;; http://blog.nacyot.com/articles/2014-06-01-emacs-with-cask/#toc
 (require 'cask "~/.cask/cask.el")
 (cask-initialize)
 
-;; Korean Setting
+;; https://github.com/rdallasgray/pallet
+(require 'pallet)
+(pallet-mode t)
 
-(set-language-environment "Korean")
-;; (setq default-korean-keyboard "3") 3벌식
-
-;; (prefer-coding-system 'utf-8) ; utf-8 환경 설정
-;; ;; (custom-set-variables
-;; ;; '(default-input-method "korean-hangul")) ;; 내장 두벌식
-
-
-
-
+;; https://github.com/emacs-jp/init-loader
+(require 'init-loader)
+;; Load configuration files in '/path/to/init-directory'.
+(init-loader-load "~/.emacs.d/init")
+;; If you omit arguments, then `init-loader-directory' is used
+;; (init-loader-load)
 
 
 
-;; Zenburn Dark theme Enable
-;; https://github.com/bbatsov/zenburn-emacs
-(load-theme 'zenburn t)
-
-;; Powerline theme Enable
-;; Powerline: status bar customize package
-;; ref: https://github.com/milkypostman/powerline
-(require 'powerline)
-(powerline-center-theme)
-
-
-;; cmake-ide Enable
-;; ref: https://github.com/atilaneves/cmake-ide
-(require 'rtags) ;; optional, must have rtags installed
-;; (cmake-ide-setup)
-
-;; (package-refresh-contents)
-
-;; flycheck Enable
-;; (require 'flycheck)
-;; (global-flycheck-mode)

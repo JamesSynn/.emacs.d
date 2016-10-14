@@ -2,6 +2,8 @@
 Cask~
 init.el~
 auto-save-list
+*.elc
+/url
 ~*.*
 *.*~
 #*.*#
