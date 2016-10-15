@@ -14,6 +14,8 @@
 ;; theme
 (depends-on "color-theme")
 (depends-on "zenburn-theme")
+(depends-on "moe-theme")
+(depends-on "monokai-theme")
 (depends-on "powerline")
 
 
@@ -26,14 +28,39 @@
 (depends-on "magit")
 (depends-on "magit-popup")
 
+
 ;; shell
 (depends-on "zlc")
 
+;; Auto complete
+(depends-on "company")
+(depends-on "auto-complete")
+(depends-on "auto-complete-clang")
+
+
+
+
+
+
+;; Buffer
+
+(depends-on "ido-completing-read+")
+(depends-on "ido-ubiquitous")
+(depends-on "ido-vertical-mode")
+(depends-on "ido-yes-or-no")
+(depends-on "idomenu")
+(depends-on "imenu-anywhere")
+(depends-on "idle-highlight-mode")
+
+;; Helm
+
+(depends-on "helm")
+
+
+;; C/C++
 
 (depends-on "ace-jump-mode")
 (depends-on "anzu")
-(depends-on "auto-complete")
-(depends-on "auto-complete-clang")
 (depends-on "bind-key")
 
 
@@ -64,16 +91,10 @@
 
 (depends-on "htmlize")
 
-(depends-on "ido-completing-read+")
-(depends-on "ido-ubiquitous")
-(depends-on "ido-vertical-mode")
-(depends-on "ido-yes-or-no")
-(depends-on "idomenu")
-(depends-on "imenu-anywhere")
-(depends-on "idle-highlight-mode")
-
+;; markdown mode
 (depends-on "markdown-mode")
 (depends-on "markdown-preview-mode")
+
 
 (depends-on "multiple-cursors")
 (depends-on "popwin")
