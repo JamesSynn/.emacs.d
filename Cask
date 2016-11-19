@@ -4,6 +4,8 @@
 (source SC)
 (source org)
 
+;; cask
+;; $ export PATH="$HOME/.cask/bin:$PATH"
 
 ;; cask packages
 (depends-on "cask")
@@ -17,7 +19,7 @@
 (depends-on "moe-theme")
 (depends-on "monokai-theme")
 (depends-on "powerline")
-
+(depends-on "smart-mode-line")
 
 ;; git
 (depends-on "git")
@@ -36,7 +38,8 @@
 (depends-on "company")
 (depends-on "auto-complete")
 (depends-on "auto-complete-clang")
-
+(depends-on "auto-complete-c-headers")
+(depends-on "yasnippet")
 
 
 
@@ -87,6 +90,7 @@
 (depends-on "flycheck-haskell")
 (depends-on "fold-dwim")
 (depends-on "fold-dwim-org")
+(depends-on "iedit")
 
 
 (depends-on "htmlize")
@@ -112,11 +116,10 @@
 (depends-on "s")
 (depends-on "smartparens")
 (depends-on "smex")
-(depends-on "smart-mode-line")
+
 
 (depends-on "use-package")
 (depends-on "web-mode")
-(depends-on "yasnippet")
 
 (depends-on "ivy")
 (depends-on "irony")

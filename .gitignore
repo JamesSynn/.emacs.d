@@ -2,6 +2,7 @@
 Cask~
 init.el~
 auto-save-list
+session.*
 *.elc
 /url
 ~*.*

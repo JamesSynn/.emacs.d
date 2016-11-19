@@ -9,8 +9,8 @@
 (add-to-list 'auto-mode-alist '("\\.md" . markdown-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown" . markdown-mode))
 
-(add-hook 'markdown-mode-hook
-          (lambda ()
-            (auto-fill-mode -1)
-            ))
+;;(add-hook 'markdown-mode-hook
+;;          (lambda ()
+;;            (auto-fill-mode -1)
+;;            ))
 
