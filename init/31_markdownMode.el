@@ -1,16 +1,12 @@
 
-;; (add-lib-path "markdown-mode")
 
-;; (autoload 'markdown-mode "markdown-mode.el"
-;;             "Major mode for editing Markdown files" t)
-;; (setq auto-mode-alist
-;;          (cons '("\\.md" . markdown-mode) auto-mode-alist))
+;;http://jblevins.org/projects/markdown-mode/
 
-(add-to-list 'auto-mode-alist '("\\.md" . markdown-mode))
-(add-to-list 'auto-mode-alist '("\\.markdown" . markdown-mode))
-
-;;(add-hook 'markdown-mode-hook
-;;          (lambda ()
-;;            (auto-fill-mode -1)
-;;            ))
+(use-package markdown-mode
+  :ensure t
+  :commands (markdown-mode gfm-mode)
+  :mode (("README\\.md\\'" . gfm-mode)
+         ("\\.md\\'" . markdown-mode)
+         ("\\.markdown\\'" . markdown-mode))
+  :init (setq markdown-command "multimarkdown"))
 

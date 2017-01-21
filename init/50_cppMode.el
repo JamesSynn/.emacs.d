@@ -1,28 +1,18 @@
 
 
-;; auto-complete
-
-(require 'auto-complete)
-(require 'auto-complete-config)
-(ac-config-default)
-
 
 ;; start yasnippet with emacs
 (require 'yasnippet)
 (yas-global-mode 1)
 
 
-;; start auto-complete with emacs
-(require 'auto-complete)
-(require 'auto-complete-config)
-(ac-config-default)
 
 ;; let's define a function which initializes auto-complete-c-headers and gets called for c/c++ hooks
 (defun my:ac-c-header-init ()
   (require 'auto-complete-c-headers)
   (add-to-list 'ac-sources 'ac-sources-c-headers)
   ;;(add-to-list 'achead:include-directories '"/usr/lib/gcc/x86_64-redhat-linux/6.2.1/../../../../include/c++/6.2.1")
-
+)
 ;; now let's call this function from c/c++ hooks
 (add-hook 'c++-mode-hook 'my:ac-c-header-init)
 (add-hook 'c-mode-hook 'my:ac-c-header-init)

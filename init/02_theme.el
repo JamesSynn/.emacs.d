@@ -1,6 +1,5 @@
 
 
-
 ;; Line number enable
 (global-linum-mode 1)
 
