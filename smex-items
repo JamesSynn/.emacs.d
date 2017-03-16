@@ -1,16 +1,18 @@
 
 ;; ----- smex-history -----
 (
+ markdown-preview-mode
  list-packages
  cd
  5x5
  arp
  dbx
  dig
- erc
 )
 
 ;; ----- smex-data -----
 (
  (list-packages . 1)
+ (markdown-preview . 2)
+ (markdown-preview-mode . 2)
 )

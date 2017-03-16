@@ -149,7 +149,9 @@
 ;; markdown mode
 (depends-on "markdown-mode")
 (depends-on "markdown-preview-mode")
-
+(depends-on "websocket")
+(depends-on "web-server")
+(depends-on "uuldgen")
 
 (depends-on "multiple-cursors")
 (depends-on "popwin")
@@ -180,4 +182,3 @@
     
 
 (depends-on "zlc")
-
